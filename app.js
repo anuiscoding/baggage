@@ -1,7 +1,7 @@
 const express = require("express");
-const app = express();
+const app = express(); 
 
-const db = require("./configs/mongoose-connection");
+const db = require("./config/mongoose-connection");
 const ownersrouter = require("./routes/ownersrouter");
 const usersrouter = require("./routes/usersrouter");
 const productsrouter = require("./routes/productsrouter");
@@ -18,6 +18,9 @@ app.set("view engine", "ejs");
 app.use("/owners", ownersrouter);
 app.use("/users", usersrouter);
 app.use("/products", productsrouter);
+
+// console.log("APP NODE_ENV:", process.env.NODE_ENV);
+// console.log(process.env);
 
 app.listen(3000);
 
