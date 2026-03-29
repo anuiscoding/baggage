@@ -1,0 +1,60 @@
+<%- include('./partials/header') %>
+
+<div class="w-full min-h-screen flex items-start px-20 py-20 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#020617] text-slate-100">
+
+<!-- LEFT SIDEBAR -->
+<div class="w-[25%] flex h-screen flex-col items-start">
+
+    <!-- SORT -->
+    <div class="flex items-center gap-3">
+        <h3 class="text-slate-300 font-medium tracking-wide">Sort by</h3>
+        <form action="/shop">
+            <select class="px-3 py-1.5 rounded-lg bg-white/10 text-slate-200 border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-400/40">
+                <option value="popular">Popular</option>
+                <option value="newest">Newest</option>
+            </select>
+        </form>
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="flex flex-col mt-16">
+        <h4 class="text-indigo-400 text-sm mb-3 tracking-wide">CATEGORIES</h4>
+
+        <a class="block w-fit mb-2 text-slate-300 hover:text-indigo-400 transition" href="">New Collection</a>
+        <a class="block w-fit mb-2 text-slate-300 hover:text-indigo-400 transition" href="">All Products</a>
+        <a class="block w-fit mb-2 text-slate-300 hover:text-indigo-400 transition" href="">Discounted Products</a>
+    </div>
+
+    <!-- FILTER -->
+    <div class="mt-24">
+        <h4 class="text-indigo-400 text-sm mb-3 tracking-wide">FILTERS</h4>
+
+        <a class="block w-fit mb-2 text-slate-400 hover:text-indigo-400 transition" href="">Availability</a>
+        <a class="block w-fit mb-2 text-slate-400 hover:text-indigo-400 transition" href="">Discount</a>
+    </div>
+</div>
+
+<!-- RIGHT CONTENT -->
+<div class="w-[75%] flex flex-col gap-5 h-screen">
+
+    <!-- HEADER -->
+    <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-semibold tracking-tight">
+            <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Explore Products
+            </span>
+        </h2>
+
+        <span class="text-slate-400 text-sm">Showing latest items</span>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <div class="flex items-start gap-5">
+        <!-- future cards -->
+    </div>
+
+</div>
+
+</div>
+
+<%- include('./partials/footer') %>
